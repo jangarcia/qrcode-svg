@@ -15,7 +15,6 @@ exports["Test SVG output"] = function(test) {
   var qrcode = new QRCode("Hello World!");
   test.ok(typeof qrcode == "object", "Expected object as the result!");
   test.ok(typeof qrcode.svg == "function", "Missing 'svg' function!");
-  test.ok(typeof qrcode.save == "function", "Missing 'save' function!");
   
   var svg = qrcode.svg();
   test.ok(typeof svg == "string", "Expected string as the result!");
